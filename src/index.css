@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Marvel:400,700&display=swap');
+
+body {
+  background: url('img/background.png');
+  background-size: cover;
+  background-repeat:no-repeat;
+  height:100vh;
+  width:100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+  font-family: 'Marvel', sans-serif;
+}
+
+.main-container{
+  height: 90%;
+  text-align: center;
+  min-height: 500px;
+  min-width:500px;
+}
+
+.logos-container{
+  text-align: center;
+}
+
+.logos-container img:nth-of-type(1){
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.75);
+  margin: 10px
+}
+
+.search-bar{
+  width:100%;
+  max-width: 600px ;
+  height: 50px;
+  margin:20px 10px;
+  background: rgba(255,255,225,0.6);
+  border: none;
+  text-align:center;
+  font-size: 20px;
+  color: black;
+}
+
+.cards-container{
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: inline-block;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+
+.cards-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.6);
+}
+
+
+.card{
+  border-radius: 10px;
+  height: auto;
+  min-height: 110px;
+  padding: 10px;
+  background: rgba(255,255,225,0.4);
+  margin: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-char-container{
+  display: flex;
+}
+
+.card-char-container img{
+  height: 90px;
+  width: 90px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.card-char-container p {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.form-container{
+  width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+  background: rgba(255,255,225,0.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin:10px auto;
+}
+
+.form-container.active{
+  display: block;
+}
+
+.form-container p{
+  font-size: 20px;
+}
+
+.form-container input[type="text"]{
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.form-container button{
+  background: #3c2899;
+  border: 0px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+.card-option-edit{
+  width:100%;
+  text-align: right;
+}
+
+.card-option-edit a{
+  text-decoration: none;
+  margin-left: 10px;
+  color: initial !important;
+}
+
+.card-option-edit button{
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  font-family: Marvel;
+  padding:0;
+  font-size: 16px !important;
+  outline: none;
+}
+
+.series-container{
+  font-size: 25px;
+  border-radius: 10px;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  min-width: 500px;
+}
+
+.series-container-title{
+  background: rgba(255,255,225,0.6);
+  padding: 20px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.series-container-content{
+  background: rgba(255,255,225,0.4);
+  overflow-y:auto;
+  height: 100%;
+  padding: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.series-content{
+  text-align: left;
+}
+
+.loader{
+  margin-top: 50px;
+}
