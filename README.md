@@ -1,4 +1,8 @@
 # marvelql
 Projeto - React + MarvelQL
 
-![Image description](pic.png)
+![app marvel](pic.png)
+
+[Gitlab](https://gitlab.com/diego_cadena/marvelql)
+
+
