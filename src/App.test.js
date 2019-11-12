@@ -14,5 +14,4 @@ it('renders without crashing', () => {
 test('Teste do App', () => {
   const testMessage = 'Test Message'
   const {getByTestId} = render(<App />)
-
 })
