@@ -1,4 +1,4 @@
 # marvelql
 Projeto - React + MarvelQL
 
-![Image description](pic.png)
+![Image description](../../pic.png)
